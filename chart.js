@@ -8,7 +8,7 @@ xmlhttp.onload = function() {
 
   for(let i=0; i<myObj.length;i++ ){
     let height =myObj[i].amount
-    graph[i].style.height=(height/5+'rem')
+    graph[i].style.height=(height*1.5+'%')
     day[i].innerHTML = myObj[i].day;
     spent[i].innerHTML= ('$ '+height)
     

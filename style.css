@@ -26,6 +26,7 @@ header{
     border-radius: 1rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 header div{
@@ -46,7 +47,7 @@ main{
 
 .spending{
     display: flex;
-    width: 90%;
+    width: 100%;
     justify-content: space-around;
     gap: 0.3rem;
     align-items: flex-end;
@@ -57,13 +58,15 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    height: 40vh;
+    
 }
 
 .graph{
     background-color: var(--softRed);
     width: 2rem;
-    border-radius: 0.3rem;
+    border-radius: 0.3rem;align-self: flex-end;
 }
 
 .spent{
@@ -85,7 +88,7 @@ main{
 }
 
 hr{
-    width: 90%;
+    width: 100%;
     background-color: var(--cream);
     border-color: var(--cream);
     margin-top: 1.5rem;
@@ -109,7 +112,7 @@ hr{
 h3{
     margin-top: 0;
     font-size: 2rem;    
-    font-weight: 700;
+    font-weight: 900;
     color: var(--darkBrown);
 }
 
@@ -129,4 +132,67 @@ h4{
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:550px) {
+   body{
+       height: 100vh;       
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+   } 
+
+   .container{
+       width: 35%;
+   }
+
+   header{
+       padding: 1rem;
+       margin: 0 auto 1rem;
+   }
+
+   header div p, header div h1{
+       margin: 0;
+       font-size: 0.8rem;
+       opacity: 0.9;
+   }
+
+   header img{
+       width: 15%;
+       height: 15%;
+   }
+
+   h2{
+       font-size: 1rem;
+       margin-top: 0;
+   }
+
+   .spending_container{
+       height: 30vh;
+   }
+
+   .graph{
+       width: 1.7rem;
+   }
+
+   .totals{
+       margin-top: 0rem;
+   }
+
+   .totals p{
+       font-size: 0.7rem;
+   }
+
+   h3{
+       font-size: 1.5rem;
+   }
+
+   h4{
+       font-size: 0.8rem;
+   }
+
+   .attribution{
+       font-size: 0.6rem;
+   }
 }
