@@ -66,12 +66,12 @@ main{
 .graph{
     background-color: var(--softRed);
     width: 2rem;
-    border-radius: 0.3rem;align-self: flex-end;
+    border-radius: 0.3rem;
 }
 
 .spent{
     background-color: var(--darkBrown);
-    color: var(--veryPaleOrange);
+    color: var(--cream);
     font-size: 0.6rem;
     width: 2.7rem;
     padding: 0.3rem;
@@ -79,6 +79,10 @@ main{
     border-radius: 0.2rem;
     margin-bottom: 0.5rem;
     display: none;
+}
+
+.show{
+    display: block;
 }
 
 .day{
