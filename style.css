@@ -138,7 +138,7 @@ h4{
     color: hsl(228, 45%, 44%);
 }
 
-@media (min-width:550px) {
+@media (min-width:700px) {
    body{
        height: 100vh;       
        display: flex;
