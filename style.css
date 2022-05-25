@@ -86,8 +86,47 @@ main{
 
 hr{
     width: 90%;
-    background-color: var(--mediumBrown);
-    border-color: var(--mediumBrown);
-    opacity: 0.2;
+    background-color: var(--cream);
+    border-color: var(--cream);
     margin-top: 1.5rem;
+    height: 2px;
+    border: none;
+}
+
+.totals{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    
+}
+
+.totals p{
+    margin: 0;
+    color: var(--mediumBrown);
+}
+
+h3{
+    margin-top: 0;
+    font-size: 2rem;    
+    font-weight: 700;
+    color: var(--darkBrown);
+}
+
+h4{
+    margin-bottom: 0;
+    color: var(--darkBrown);
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+.attribution {
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }

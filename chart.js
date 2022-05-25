@@ -8,9 +8,13 @@ xmlhttp.onload = function() {
 
   for(let i=0; i<myObj.length;i++ ){
     let height =myObj[i].amount
-    graph[i].style.height=(height/10+'rem')
+    graph[i].style.height=(height/5+'rem')
     day[i].innerHTML = myObj[i].day;
-    spent[i].innerHTML= ('$ '+height) 
+    spent[i].innerHTML= ('$ '+height)
+    
+    if(height>=50){
+      graph[i].style.backgroundColor='hsl(186, 34%, 60%)'
+    }
   }
   
 
